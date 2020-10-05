@@ -19,7 +19,7 @@ public class AddingMachine
 
 	public int getTotal ()
 	{
-		return 0; //returns zero
+		return 1; //returns zero
 	}
 
 	//this method adds a value to total 
