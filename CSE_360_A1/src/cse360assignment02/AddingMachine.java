@@ -9,37 +9,46 @@ package cse360assignment02;
 
 public class AddingMachine 
 {
-	
-	private int total; //declares the varible
 
-	public AddingMachine () 
+	private int total; //declares the varible
+	private String memory; // holds the memory of the assignment
+
+	public AddingMachine() 
 	{
 		total = 0;  // initializing total to zero
+		memory = "0"; // the first memory is  zero 
 	}
 
 	public int getTotal ()
 	{
-		return 1; //returns zero
+		return total; //returns the total 
 	}
 
 	//this method adds a value to total 
 	public void add (int value) 
 	{
+		total = total + value;
+		memory = memory + " + " + value; // adds this operation to the memory
 	}
-    //this method subtracts from the total
+	//this method subtracts from the total 
 	public void subtract (int value) 
 	{
+		total = total - value;
+		memory = memory + " - " + value; //adds the subtracts the operation to the memory
 	}
 
 	//this method returns a string 
 	public String toString () 
 	{
-		return "";
+		return memory;
 	}
-    //this method erases the memory
+
+	//this method erases the memory
 	public void clear() 
 	{
-		
+		memory = "";
+		total = 0;
+
 	}
 
 
