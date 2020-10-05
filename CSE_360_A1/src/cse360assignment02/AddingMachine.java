@@ -4,6 +4,7 @@
 //      Lecture: T 9 am
 //  Description: Assignment one helps us get familar with git hub.
 
+//test1 
 package cse360assignment02;
 
 public class AddingMachine 
