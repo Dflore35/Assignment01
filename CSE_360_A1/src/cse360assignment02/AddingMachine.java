@@ -1,55 +1,79 @@
-// Assignment #1: Arizona State University CSE360
-//         Name: Diana Flores
-//    StudentID: 1214750485
-//      Lecture: T 9 am
-//  Description: Assignment one helps us get familar with git hub.
+/**
+ * This java class is practice with git and github. 
+ * The program is a simlpe + and - calculator that also hold memory
+ * @author Diana
+ */
 
-//test1 
 package cse360assignment02;
 
-public class AddingMachine 
-{
-
-	private int total; //declares the varible
-	private String memory; // holds the memory of the assignment
-
+public class AddingMachine {
+	
+	private int total; 
+	private String memory; 
+	
+    /**
+     * Constructor.(For initializing total and memory )
+     */
 	public AddingMachine() 
 	{
-		total = 0;  // initializing total to zero
-		memory = "0"; // the first memory is  zero 
+		total = 0;  
+		memory = "0"; 
 	}
+	
+	/**
+	 * registers the integer to be used or displayed when called
+	 * @return the int to use
+	 */
 
 	public int getTotal ()
 	{
-		return total; //returns the total 
+		return total; 
 	}
-
-	//this method adds a value to total 
+	
+	/**
+	 * Registers the total + an integer and stores the operation in a string
+	 * @param memory a string that now stores the add operation done
+	 * @param value an integer to be added to total
+	 * @param total an integer that holds a value after arithmetic opertaions
+	 */
+	
 	public void add (int value) 
 	{
 		total = total + value;
-		memory = memory + " + " + value; // adds this operation to the memory
+		memory = memory + " + " + value; 
 	}
-	//this method subtracts from the total 
+	/**
+	 * Registers the total - an integer and stores the operation in a string
+	 * @param value an integer to be added to the total
+	 * @param memory a string that now stores the subtact operation done ex " - 7"
+	 * @param total  an integer that holds a value after arithmetic opertaions
+	 */
+	
 	public void subtract (int value) 
 	{
 		total = total - value;
-		memory = memory + " - " + value; //adds the subtracts the operation to the memory
+		memory = memory + " - " + value; 
 	}
 
-	//this method returns a string 
+	
+	/**
+	 * Registers the string to be printed out when called  
+	 * @return give a string called memory
+	 */
 	public String toString () 
 	{
 		return memory;
 	}
 
-	//this method erases the memory
+	/**
+	 * This method redeclares the value to nothing so they can be used again
+	 * @param memory a string is set to nothing
+	 * @param total an integer is set to zero
+	 */
 	public void clear() 
 	{
 		memory = "";
 		total = 0;
 
 	}
-
-
 }
